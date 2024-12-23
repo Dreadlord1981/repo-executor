@@ -42,6 +42,9 @@ pub struct Arguments {
 
 	#[arg(short('s'), long("stdprint"), help="Verbose print to stdout")]
 	pub stdprint: bool,
+
+	#[arg(short('n'), help="Use ftp instead off ssh")]
+	pub new: bool,
 	
 	#[arg(short('H'), long("help"), help="Print help", action = clap::ArgAction::Help)]
 	pub help: Option<bool>,
